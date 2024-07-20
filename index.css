@@ -14,65 +14,79 @@ header{
     background-color: rgb(8, 0, 11);
     width: 100%;
     position:fixed;
-    z-index: 999;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 200px;
 }
+.logo{
+  font-weight: 700;
+  font-family: "Brush Script MT",Cursive;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+.m-logo{
+color:  rgb(98, 0, 179);
+font-family: "Brush Script MT",Cursive;
+text-transform: uppercase;
+}
 .Navigation a{
-    color: rgb(78, 0, 141);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.1em;
-    font-weight: 500;
     padding-left: 30px;
+    position: relative;
 }
-.Navigation a:hover{
-    color: rgb(252, 142, 142);
+.Navigation a::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  left: 29px;
+  bottom: -6px;
+  transition: 0.5s;
+    background: rgb(98, 0, 179);
 }
-.logo{
-    font-weight: 700;
-    font-family: "Brush Script MT",Cursive;
-    text-decoration: none;
-    color: rgb(78, 0, 141);
-    text-transform: uppercase;
-    font-size: 1.8em;
+.Navigation a:hover::after{
+  width: 74%;
 }
-section {
+
+/* section {
     padding: 100px ;
-}
+} */
 .main{
     padding: 100px ;
     height: 100vh;
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     background: url("./imgs/background2.png") no-repeat;
-    
     background-size: cover;
     background-position:right ;
     /* opacity:0.9; */
     /* background-attachment: fixed; */
 }
-.main h1{
-    margin: 20px 0;
-    color: rgb(78, 0, 141);
-    font-size: 3em;
-    font-weight: 600;
+.main-work{
+  color: white;
+  font-size: 1.2em;
+  font-weight: 300;
 }
-.main h3{
-    color: white;
-    font-size: 1.4em;
+.main-name{
+  color: white;
+  font-size: 4em;
+  font-weight: 600;
+  width:600px
 }
-.main-image-container{
-  margin-left: 50px;
+.Mazen{
+  color: rgb(78, 0, 141);
+  
 }
-.main-image{
-width: 650px;
-height: 100vh;
-}
-#work{
+
+
+.see-work-button{
     padding: 0.95em 2.1em;
     background-color: rgb(78, 0, 141);
     border-radius: 16px;
@@ -81,14 +95,15 @@ height: 100vh;
     font-size: 1.1em;
     transition:0.7s ease ;
     margin-bottom: 35px;
+    cursor: pointer;
    
 }
-#work:hover{
-    background-color: rgb(57, 0, 0);
+.see-work-button:hover{
+    background-color: rgb(43, 0, 78);
     transform:scale(1.1) ;
     
 }
-#work a{
+.see-work-button a{
     text-decoration: none;
     color: white;
     font-size: 15px;
@@ -106,6 +121,25 @@ height: 100vh;
     transform:scale(1.1) ;
   }
  
+  .about{
+    padding-top:100px ;
+    padding-left: 50px;
+    height: 100vh;
+  }
+  .about-me-card{
+    padding: 25px;
+    margin:15px;
+    text-align: center;
+
+    width: 21.25em;
+    
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16);
+    transition: 0.7s ease;
+  }
+
+
   .services h1{
     
     display: flex;
