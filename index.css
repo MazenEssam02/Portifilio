@@ -156,9 +156,7 @@ text-transform: uppercase;
     height: 500px;
   }
 
-.aboutme-img{
-  /* min-width:0px */
-}
+
 .about-me-container{
 margin: 10px;
 max-width: 500px;
@@ -471,7 +469,7 @@ padding: 10px 15px;
         text-decoration: none;
         color: rgb(255, 255, 255);
       } */
-      @media(max-width:1280px){
+      @media(max-width:1290px){
         .cards{
           justify-content: center;
         }
@@ -479,7 +477,7 @@ padding: 10px 15px;
           text-align: center;
         }
         .button-cards{
-          margin: 20px;
+          margin: 20px 15px;
         }
         .project-main{
           justify-content: center;
@@ -495,8 +493,15 @@ padding: 10px 15px;
         header{
           padding: 12px 40px;
       }
+
       .Navigation a{
         padding-left: 20px;
+      }
+      .Navigation a::after{
+       
+        left: 20px;
+        
+        
       }
       .section{
       padding: 80px 60px;
