@@ -19,6 +19,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 150px;
+   
 }
 .section{
   padding: 100px;
@@ -28,6 +29,7 @@ header{
   font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 .logo{
   font-weight: 700;
@@ -48,7 +50,9 @@ text-transform: uppercase;
     font-size: 1.1em;
     padding-left: 30px;
     position: relative;
+    
 }
+
 .Navigation a::after{
   content: '';
   width: 0%;
@@ -62,6 +66,50 @@ text-transform: uppercase;
 .Navigation a:hover::after{
   width: 74%;
 }
+.Navigation{
+  position: relative;
+}
+.Navigation-menu{
+  display: flex;
+  flex-direction: column;
+}
+.Navigation-menu a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.1em;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+.Navigation-menu a:hover{
+  
+    color: rgb(141, 139, 143);
+}
+.right-bar{
+  background-color: rgb(78, 0, 141);
+  position: absolute;
+  padding: 10px;
+ 
+  right:5px;
+  /* bottom: -170px; */
+  bottom: 65px;
+  width:150px;
+  flex-direction: column;
+  transition: ease 0.9s;
+  
+}
+.bars-menu{
+  display: none;
+  color: white;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.xmark{
+  color: white;
+  font-size: 1.3em;
+  cursor: pointer;
+  width: 10px;
+}
+
 
 /* section {
     padding: 100px ;
@@ -138,6 +186,7 @@ text-transform: uppercase;
   .about{
    
     min-height: 100vh;
+   
     display: flex;
     align-items: center;
   }
@@ -160,13 +209,10 @@ text-transform: uppercase;
 .about-me-container{
 margin: 10px;
 max-width: 500px;
+min-height: 470px;;
 
 }
-.about-title{
-  font-size: 2.5em;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-}
+
 .about-description{
   color: rgb(201, 201, 201);
   
@@ -188,10 +234,10 @@ max-width: 500px;
   content: '';
   width: 20px;
   height: 3px;
+  border-radius: 5px;
   position: absolute;
   left: 0;
   bottom: -6px;
-  transition: 0.5s;
   background: rgb(78, 0, 141);
 }
 
@@ -470,6 +516,7 @@ padding: 10px 15px;
         color: rgb(255, 255, 255);
       } */
       @media(max-width:1290px){
+       
         .cards{
           justify-content: center;
         }
@@ -566,6 +613,14 @@ padding: 10px 15px;
        .option{
         margin-right: 30px;
         
+      }
+    }
+    @media(max-width:500px){
+      .Navigation a{
+        display: none;
+      }
+      .bars-menu{
+        display: block;
       }
     }
     @media(max-width:450px){
