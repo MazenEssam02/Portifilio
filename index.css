@@ -440,7 +440,7 @@ margin:20px;
   background-color: rgb(78, 0, 141);
   border-radius: 10px;
   border: none;
-
+  text-decoration: none;
   font-size: 0.8em;
   transition:0.7s ease ;
   cursor: pointer;
@@ -448,7 +448,7 @@ margin:20px;
 }
 .cv-button:hover{
   background-color: rgb(43, 0, 78);
-  transform:scale(1.1) ;
+  
   
 }
 .contact-right{
